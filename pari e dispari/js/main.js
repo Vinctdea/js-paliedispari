@@ -5,6 +5,7 @@ const numUser = document.getElementById("numero_user");
 const pariDispari = document.getElementById("pari_dispari");
 const start = document.getElementById("btn");
 const res = document.getElementById("risultato");
+const selez = document.getElementById("selezione");
 
 
 // gestisco click per prendere valori
@@ -19,9 +20,9 @@ start.addEventListener("click",
         if(risultato===valorePariDispari){
             res.innerHTML = `hai vinto la somma dei numeri è ${risultato}`
         }else{
-            res.innerHTML = `hai perso la somma dei numeri ${risultato}`
+            res.innerHTML = `hai perso la somma dei numeri è ${risultato}`
         }
-
+        selezione.innerHTML= `avevi scelto ${valorePariDispari} e il numero${valoreUser}, il numero del pc era ${numPc}`;
     }
 );
 
