@@ -13,14 +13,12 @@ start.addEventListener("click",
         let valorePariDispari = pariDispari.value;
         let numPc = numRandom(1, 5);
         console.log(valorePariDispari,valoreUser,numPc);
+        let risultato = sommaPariDispari(numPc, valoreUser);
+        console.log(risultato);
+        
+
     }
 );
-
-
-
-
-
-
 
 
 
@@ -32,5 +30,13 @@ function numRandom(min, max) {
 // Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 
 
+function sommaPariDispari(num1,num2){
+    let risultatoSomma= parseInt(num1+num2);
+    if (risultatoSomma % 2 === 0){
+        return "la somma dei numeri è pari";
+    } else {
+        return "la somma dei numeri è dispari";
+    }
 
+}
 // Dichiariamo chi ha vinto.
