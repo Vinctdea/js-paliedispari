@@ -39,3 +39,9 @@ label{
     background-color: chartreuse;
 }
 
+.result {
+    text-align: center;
+    font-size: 50px;
+    color: deeppink;
+}
+

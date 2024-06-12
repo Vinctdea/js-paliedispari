@@ -3,7 +3,8 @@
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 const numUser = document.getElementById("numero_user");
 const pariDispari = document.getElementById("pari_dispari");
-const start = document.getElementById("btn")
+const start = document.getElementById("btn");
+const res = document.getElementById("risultato");
 
 
 // gestisco click per prendere valori
@@ -15,7 +16,11 @@ start.addEventListener("click",
         console.log(valorePariDispari,valoreUser,numPc);
         let risultato = sommaPariDispari(numPc, valoreUser);
         console.log(risultato);
-        
+        if(risultato===valorePariDispari){
+            res.innerHTML = `hai vinto ${risultato}`
+        }else{
+            res.innerHTML = `hai perso ${risultato}`
+        }
 
     }
 );
