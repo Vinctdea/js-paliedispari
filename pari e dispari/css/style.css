@@ -4,3 +4,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* *********************REGOLE MAIN********************* */
+main{
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px;
+    background-color: darkgreen;
+    border-radius: 30px;
+
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+form, input, select, #btn{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 10px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+label{
+    font-size: 40px;
+}
+
