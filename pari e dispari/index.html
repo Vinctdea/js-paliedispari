@@ -9,19 +9,30 @@
      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- main -->
     <main>
         <h1>pari o dispari ?</h1>
-        <form action="#">
-            <input type="number" name="numero" id="numero_user" min="1" max="5" required>
-            <label for="numero_user">Scegli un numero da 1 a 5</label>
-            <select required  name="pari_dispari" id="pari_dispari" >
-                <option value="#"></option>
-                <option value="pari">pari</option>
-                <option value="dispari">dispari</option>
-            </select>
-            <label for="pari_dispari">scegli pari o dispari</label><br>
-            <input type="button" value="inizia" id="btn">
-        </form>
+
+        <!-- sezione form -->
+         <section>
+            <form action="#">
+                <input type="number" name="numero" id="numero_user" min="1" max="5" required>
+                <label for="numero_user">Scegli un numero da 1 a 5</label>
+                <select required  name="pari_dispari" id="pari_dispari" >
+                    <option value="#"></option>
+                    <option value="pari">pari</option>
+                    <option value="dispari">dispari</option>
+                </select>
+                <label for="pari_dispari">scegli pari o dispari</label><br>
+                <input type="button" value="inizia" id="btn">
+            </form>
+         </section>
+        
+
+        <!-- sezione stampa risultato -->
+         <section class="result">
+
+         </section>
     </main>
 
     <script src="js/main.js"></script>
