@@ -17,9 +17,9 @@ start.addEventListener("click",
         let risultato = sommaPariDispari(numPc, valoreUser);
         console.log(risultato);
         if(risultato===valorePariDispari){
-            res.innerHTML = `hai vinto ${risultato}`
+            res.innerHTML = `hai vinto la somma dei numeri è ${risultato}`
         }else{
-            res.innerHTML = `hai perso ${risultato}`
+            res.innerHTML = `hai perso la somma dei numeri ${risultato}`
         }
 
     }
@@ -38,9 +38,9 @@ function numRandom(min, max) {
 function sommaPariDispari(num1,num2){
     let risultatoSomma= parseInt(num1+num2);
     if (risultatoSomma % 2 === 0){
-        return "la somma dei numeri è pari";
+        return "pari";
     } else {
-        return "la somma dei numeri è dispari";
+        return "dispari";
     }
 
 }
